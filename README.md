@@ -12,7 +12,7 @@ In your web page:
 
 ```html
 <script src="jquery.js"></script>
-<script src="dist/jquery.JIndicator.min.js"></script>
+<script src="dist/JIndicator.min.js"></script>
 <script>
 $('#demo').JIndicator({
     barValues: [, 20, 60,],
@@ -33,7 +33,7 @@ _(Coming soon)_
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         
         <script src="jquery.js"></script>
-        <script src="dist/jquery.JIndicator.min.js"></script>
+        <script src="dist/JIndicator.min.js"></script>
     </head>
     <body>
         <div id="demoCanvas"></div>
