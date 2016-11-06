@@ -21,6 +21,7 @@ $('#demo').JIndicator({
 </script>
 ```
 ![image](https://github.com/chenxing2/jquery-indicator/raw/master/screenshots/1.png)
+<img align="center" src="https://github.com/chenxing2/jquery-indicator/raw/master/screenshots/1.png">
 ## Documentation
 _(Coming soon)_
 
