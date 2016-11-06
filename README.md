@@ -20,11 +20,9 @@ $('#demo').JIndicator({
 });
 </script>
 ```
-<div style="text-align:center">
-    <img align="center" src="https://github.com/chenxing2/jquery-indicator/raw/master/screenshots/1.png" width="500px" height="50px">
-</div>
+<img align="center" src="https://github.com/chenxing2/jquery-indicator/raw/master/screenshots/1.png" width="500px" height="50px">
 ## Documentation
-_(Coming soon)_
+
 
 ## Examples
 ``` html
