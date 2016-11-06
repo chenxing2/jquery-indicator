@@ -24,15 +24,15 @@ $('#demo').JIndicator({
 _(Coming soon)_
 
 ## Examples
-```
+``` html
 <html lang="zh-CN">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         
-        <script src="http://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
-        <script src="jquery.JIndicator.js"></script>
+        <script src="jquery.js"></script>
+        <script src="dist/jquery.JIndicator.min.js"></script>
     </head>
     <body>
         <div id="demoCanvas"></div>
