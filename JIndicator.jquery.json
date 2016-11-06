@@ -1,0 +1,26 @@
+{
+  "name": "JIndicator",
+  "title": "JIndicator",
+  "description": "",
+  "version": "0.1.0",
+  "homepage": "https://github.com/chenxing2/jquery-indicator",
+  "author": {
+    "name": "Alanwei",
+    "email": "chenxing2@163.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chenxing2/jquery-indicator.git"
+  },
+  "bugs": "https://github.com/chenxing2/jquery-indicator/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/chenxing2/jquery-indicator/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "keywords": []
+}
