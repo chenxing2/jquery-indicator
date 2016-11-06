@@ -15,7 +15,8 @@ In your web page:
 <script src="dist/jquery.JIndicator.min.js"></script>
 <script>
 $('#demo').JIndicator({
-    barValues: [, 20, 60,]
+    barValues: [, 20, 60,],
+    indicatorValue: 50
 });
 </script>
 ```
