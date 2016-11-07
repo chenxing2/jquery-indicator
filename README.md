@@ -37,17 +37,13 @@ $('#demo').JIndicator({
     </body>
     <script type="text/javascript">
         
-        $('#demoCanvas').JIndicator({/*
-            barColor: {
-                left: '#123456',
-                middle: '#e34222',
-                right: '#a9a233'
-            },*/
+        $('#demoCanvas').JIndicator({
+            //barColor: {
+            //    left: '#123456',
+            //    middle: '#e34222',
+            //    right: '#a9a233'
+            //},
             barValues: [, 20, 60,]
-            // barHeight: 15,
-            // canvasHeight: 70,
-            // canvasWidth: 800,
-            // barWidth: 200
         });
         
         $('#demoCanvas').JIndicator({'indicatorValue': 120});
