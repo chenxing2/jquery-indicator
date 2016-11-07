@@ -5,7 +5,7 @@
  * Copyright (c) 2016 Alanwei
  * Licensed under the MIT license.
  */
-
+/*global $, jQuery*/
 (function ($) {
 
     "use strict";
@@ -34,6 +34,7 @@
             indicatorValue: 0
         };
         this.options = $.extend({}, this.defaults, this.options, typeof opt === 'object' && opt);
+        
     };
     
     // Collection method.
@@ -71,7 +72,7 @@
         options.triangleHeight = options.tHeight + 8;
         
         // context.clearRect(0, 0, options.canvasWidth, options.canvasHeight);
-        canvas.height = canvas.height;
+        canvas.height += 0;
     }
 
     // left
@@ -186,6 +187,13 @@
         context.lineTo(position.positionX + options.barHeight / 2 + 1,  position.positionArcY);
         context.fillStyle = position.color;
         context.fill();
+        context.closePath();
+        
+        // draw Indicator number text
+        context.font = options.numberText.font;
+        context.textAlign = options.numberText.align;
+        context.fillText(options.indicatorValue || 0,
+                         position.positionX + options.barHeight / 2 + 3, position.positionTriY - options.triangleHeight / 6);
     }
 
     // Number
@@ -198,14 +206,13 @@
         context.textAlign = options.numberText.align;
         context.fillStyle = options.numberText.color;
       
-        for (i = 0; i < options.barValues.length; i++) {
-            if (isNaN(options.barValues[i])) {
-                continue;
+        for (i = 0; i < options.barValues.length; i += 1) {
+            if (!isNaN(options.barValues[i])) {
+                positonX = options.startX + options.barWidth * i;
+                metrics = context.measureText(options.barValues[i]);
+                context.fillText(options.barValues[i], positonX - metrics.width / 2,
+                             options.middleHeight + options.barHeight / 2 + options.numberText.fontHeight + 3);
             }
-            positonX = options.startX + options.barWidth * i;
-            metrics = context.measureText(options.barValues[i]);
-            context.fillText(options.barValues[i], positonX - metrics.width / 2,
-                         options.middleHeight + options.barHeight / 2 + options.numberText.fontHeight + 3);
         }
     }
     
