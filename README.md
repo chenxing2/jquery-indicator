@@ -3,10 +3,6 @@
 
 
 ## Getting Started
-Download the [production version][min] or the [development version][max].
-
-[min]: https://raw.github.com/chenxing2/jquery-indicator/master/dist/JIndicator.min.js
-[max]: https://raw.github.com/chenxing2/jquery-indicator/master/dist/JIndicator.js
 
 In your web page:
 
@@ -20,8 +16,7 @@ $('#demo').JIndicator({
 });
 </script>
 ```
-![image](https://github.com/chenxing2/jquery-indicator/raw/master/screenshots/1.png)
-<img align="center" src="https://github.com/chenxing2/jquery-indicator/raw/master/screenshots/1.png" width="500px" height="50px">
+<img align="center" src="https://github.com/chenxing2/jquery-indicator/raw/master/screenshots/2.png" width="500px" height="80px">
 ## Documentation
 
 
